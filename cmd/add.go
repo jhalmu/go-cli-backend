@@ -6,8 +6,6 @@ package cmd
 import (
 	"fmt"
 	"github.com/gosimple/slug"
-	"os"
-	//"github.com/jhalmu/go-cli-backend/data"
 	"github.com/pterm/pterm"
 	"github.com/spf13/cobra"
 	"gorm.io/driver/postgres"
@@ -23,6 +21,7 @@ type BlogText struct {
 
 // addCmd represents the add command
 var addCmd = &cobra.Command{
+
 	Use:   "add",
 	Short: "Add new entry",
 	Long:  `Add new entry to the database.`,
@@ -37,7 +36,7 @@ var addCmd = &cobra.Command{
 
 		var db *gorm.DB
 		db, err := gorm.Open(postgres.New(postgres.Config{
-			DSN: os.Getenv("DSN_STR"),
+			DSN: DSN_STR,
 			//PreferSimpleProtocol: true,
 		}), &gorm.Config{})
 

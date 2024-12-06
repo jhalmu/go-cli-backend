@@ -45,4 +45,6 @@ Yes. I tryed to move database functionalities to funcs in separate file but ther
 
 Using flags or subcommands should be better user experience when using commands where users are used to use them.I want to learn how to do it properly and make it more user friendly.
 
-I leaved data-dircetory in so I can come back and maeby somethime or tomorrow I figure out what went wrong with it.
+## Well
+
+How about securing env? I have tryed to use embedding but there was some issues with it so I decided to leave it as is for now. But build seems to work in differend machines when I tryed. That's nice.
