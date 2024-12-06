@@ -11,7 +11,6 @@ import (
 	"os"
 )
 
-const DSN_STR = "user=devader password=liukuPiri666 dbname=dev host=65.21.105.233 port=5432 sslmode=disable TimeZone=Europe/Helsinki"
 
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
